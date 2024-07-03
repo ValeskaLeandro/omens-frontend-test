@@ -48,3 +48,8 @@ export interface IMainButton {
   text: string,
   icon?: React.ReactElement
 }
+
+export interface IFindMovieByName {
+  movies: Movie[],
+  movieName: string
+}
