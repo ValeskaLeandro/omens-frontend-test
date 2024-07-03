@@ -12,7 +12,13 @@ const MovieCard = ({movie}: IMovieCard) => {
     <div className={styles.containerCard}>
       <Link href={`/movie/${movie.imdbID}`}>
         <div className={styles.containerImage}>
-          <Image src={movie.Poster} alt={`${movie.Title}`} width={300} height={445} className={styles.imageCard}/>
+          <Image 
+          src={movie.Poster} 
+          alt={`${movie.Title}`} 
+          width={300} 
+          height={445} 
+          className={styles.imageCard}
+          />
           <span className={styles.rating}>{movie.imdbRating}</span>
         </div>
         <div className={styles.infos}>

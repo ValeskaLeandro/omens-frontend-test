@@ -1,0 +1,15 @@
+.mainButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: var(--green);
+  color: var(--dark-blue);
+  padding: .5rem 1rem; 
+  border-radius: 15px;
+  transition: background-color .5s;
+}
+
+.mainButton:hover {
+  background-color: var(--dark-green);
+}

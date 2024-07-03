@@ -38,3 +38,13 @@ export interface IMovies {
 export interface IMovieCard {
   movie: Movie
 }
+
+export interface IMovieDetail {
+  id: string
+}
+
+export interface IMainButton {
+  href: string,
+  text: string,
+  icon?: React.ReactElement
+}
