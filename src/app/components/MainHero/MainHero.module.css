@@ -3,12 +3,15 @@
   min-height: 40vh;
   margin-top: 5rem;
   color: var(--ligth-gray);
+  gap: 1.5rem;
+}
+.containerTexts,
+.mainHero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .welcome {
   font-size: 54px;
 }
