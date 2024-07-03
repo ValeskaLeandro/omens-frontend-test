@@ -22,12 +22,14 @@ const MovieSearch = async ({ params }: { params: { movie: string }}) => {
     <main className={styles.main}>
     {
       filteredMovie ? (
-      <MovieDetail id={filteredMovie.imdbID} />
+        <MovieDetail id={filteredMovie.imdbID} />
       ) : (
-        <>
-          <span>Movie {movieName} not found</span>
-          <MainButton href={'/'} text={"Back"} icon={<GrFormPreviousLink />}/>
-        </>
+        <div className={styles.movieNotFound}>          
+            <span>Movie with &quot;{movieName}&quot; not found</span>          
+            <div>
+              <MainButton href={'/'} text={"Back"} icon={<GrFormPreviousLink />}/>
+            </div>
+        </div>
       )
     }
     </main>
