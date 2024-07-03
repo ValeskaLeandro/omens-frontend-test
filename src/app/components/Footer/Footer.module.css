@@ -1,0 +1,44 @@
+.footer {
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.footerContent {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.links, .socialMedia {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.link {
+  text-decoration: none;
+  color: var(--green);
+  transition: color .5s;
+}
+
+.link:hover {
+  color: var(--dark-green);
+}
+.paragraph {
+  color: var(--gray);
+  font-size: 14px;
+  text-align: center;
+}
+
+.socialMedia {
+  font-size: 24px;
+}
+
+@media (max-width: 500px) {
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
