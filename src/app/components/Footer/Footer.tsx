@@ -15,9 +15,25 @@ const Footer = () => {
       <p className={styles.paragraph}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, quaerat fuga? Qui laudantium facilis quibusdam saepe accusamus velit ipsa facere labore assumenda, pariatur eveniet sequi neque ad quia asperiores consectetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti provident dolorem explicabo exercitationem magni. Inventore natus amet nihil facilis, provident cupiditate sequi nemo libero tempore vero dolore, recusandae veniam quasi!</p>
 
       <ul className={styles.socialMedia}>
-        <li><Link href={""} className={styles.link}><FaGithub /></Link></li>
-        <li><Link href={""} className={styles.link}><FaLinkedin /></Link></li>
-        <li><Link href={""} className={styles.link}><FaInstagram /></Link></li>
+        <li>
+          <Link href={"https://github.com/ValeskaLeandro"} 
+            className={styles.link}>
+            <FaGithub />
+          </Link>
+        </li>
+        <li>
+          <Link 
+          href={"https://www.linkedin.com/in/valeskaleandro/"} 
+          className={styles.link}>
+          <FaLinkedin />
+          </Link>
+        </li>
+        <li>
+          <Link href={"https://www.instagram.com/valeskaleandro/"} 
+            className={styles.link}>
+              <FaInstagram />
+          </Link>
+        </li>
       </ul>
       </div>
     </footer>
