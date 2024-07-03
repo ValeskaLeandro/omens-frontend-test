@@ -14,6 +14,7 @@ import { getMovies } from '@/app/api/api';
 import Image from 'next/image';
 import { convertStringToList } from '@/app/utils/utils';
 import { GrFormPreviousLink } from 'react-icons/gr';
+import Rating from '../Rating/Rating';
 
 const MovieDetail = async ({ id }: IMovieDetail) => {
   const movies = await getMovies()
@@ -33,7 +34,7 @@ const MovieDetail = async ({ id }: IMovieDetail) => {
         />
         <div className={styles.infos}>
           <div className={styles.header}>
-            <div >
+            <div>
               <h1 className={styles.title}>{filteredMovie.Title}</h1>
               <div className={styles.genresContainer}>
                 {genres.map((genre, i) => (
@@ -43,7 +44,7 @@ const MovieDetail = async ({ id }: IMovieDetail) => {
                 ))}
               </div>
             </div>
-            <div>
+            <div className={styles.ratingContainer}>
               <span className={styles.rating}>{filteredMovie.imdbRating}</span>
             </div>
           </div>
@@ -56,6 +57,7 @@ const MovieDetail = async ({ id }: IMovieDetail) => {
             </div>
             <span className={`${styles.infoLine} ${styles.borderBottom}`}>Actors: <p>{filteredMovie.Actors}</p></span>
             <span className={`${styles.infoLine} ${styles.borderBottom}`}>Director: <p>{filteredMovie.Director}</p></span>
+            <span className={`${styles.infoLine} ${styles.borderBottom}`}>Your Rating: <Rating id={filteredMovie.imdbID} /></span>
           </div>
         </div>
       </div>

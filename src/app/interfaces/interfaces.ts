@@ -53,3 +53,12 @@ export interface IFindMovieByName {
   movies: Movie[],
   movieName: string
 }
+
+export interface IStarComponent {
+  isActive: boolean,
+  onClick(): void
+}
+
+export interface IRating {
+  id: string
+}
