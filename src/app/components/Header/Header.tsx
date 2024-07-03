@@ -1,7 +1,9 @@
-import Link from 'next/link';
+// Styles 
 import styles from './Header.module.css'
+
+// Utils
+import Link from 'next/link';
 import { RiMovie2Fill } from 'react-icons/ri';
-import { IoSearch } from 'react-icons/io5';
 
 const Header = () => {
   return(
