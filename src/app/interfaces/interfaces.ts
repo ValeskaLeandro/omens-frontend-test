@@ -36,6 +36,5 @@ export interface IMovies {
 }
 
 export interface IMovieCard {
-  movie: Movie, 
-  key: string
+  movie: Movie
 }

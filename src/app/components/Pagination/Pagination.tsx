@@ -21,18 +21,26 @@ const Pagination = ( {movies} : IMovies) => {
   const totalPages = Math.ceil(movies.length / pageSize)
 
   const nextPage = () => setCurrentPage(prev => prev + 1) 
-  const prevPage = () => setCurrentPage(prev => prev - 1) 
+  const prevPage = () => setCurrentPage(prev => prev - 1)
+
   return(
-    <div>
-      {paginatedItems.map((movie: Movie) => (
-        <MovieCard movie={movie} key={movie.imdbID}/>  
+    <div className={styles.paginationContainer}>
+      <h1 className={styles.paginationTitle}>All movies</h1>
+      <div className={styles.moviesGrid}>
+        {paginatedItems.map((movie: Movie) => (
+        <div key={movie.imdbID}>
+          <MovieCard movie={movie} />
+        </div>
       ))}
+      </div>
+      
       <div className={styles.paginationButtons}>
         <button onClick={prevPage} disabled={currentPage === 1}>
-          <GrPrevious />
+          <GrPrevious size={20}/>
         </button>
+        <span>{currentPage} de {totalPages}</span>
         <button onClick={nextPage} disabled={currentPage === totalPages}>
-          <GrNext />
+          <GrNext size={20}/>
         </button>
       </div>
     </div>

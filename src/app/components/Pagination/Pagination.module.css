@@ -1,0 +1,42 @@
+.paginationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.paginationTitle {
+  color: var(--yellow);
+  font-weight: 600;
+}
+.moviesGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.paginationButtons {
+  background-color: var(--ligth-gray);
+  width: 200px;
+  padding: 1rem;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.paginationButtons button {
+  background:none;
+  border: none;
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+.paginationButtons button:disabled {
+  color: var(--gray);
+  cursor: not-allowed;
+}
+
+@media (max-width: 680px) {
+  .moviesGrid {
+    grid-template-columns: 1fr;
+  }
+}
