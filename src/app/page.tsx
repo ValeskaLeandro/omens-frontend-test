@@ -6,10 +6,10 @@ import MainHero from "./components/MainHero/MainHero";
 import Pagination from "./components/Pagination/Pagination";
 
 // Data
-import { getData } from "./api/api";
+import { getMovies } from "./api/api";
 
 export default async function Home() {
-  const movies = await getData()
+  const movies = await getMovies()
   return (
     <main className={styles.main}>
       <MainHero />
