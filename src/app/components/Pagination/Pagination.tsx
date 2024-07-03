@@ -11,8 +11,7 @@ import { IMovies, Movie } from '@/app/interfaces/interfaces';
 
 //Utils
 import { paginate } from '@/app/utils/utils';
-import Link from 'next/link';
-import Image from 'next/image';
+import MovieCard from '../MovieCard/MovieCard';
 
 const pageSize = 4;
 
@@ -25,16 +24,9 @@ const Pagination = ( {movies} : IMovies) => {
   const prevPage = () => setCurrentPage(prev => prev - 1) 
   return(
     <div>
-      <ul>
-        {paginatedItems.map((movie: Movie) => (
-          <li key={movie.imdbID}>
-            <Link href={`/movie/${movie.imdbID}`}>
-              <Image src={movie.Poster} alt={`${movie.Title}`} width={300} height={445} />
-              <p>{movie.Title} ({movie.Year})</p>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      {paginatedItems.map((movie: Movie) => (
+        <MovieCard movie={movie} key={movie.imdbID}/>  
+      ))}
       <div className={styles.paginationButtons}>
         <button onClick={prevPage} disabled={currentPage === 1}>
           <GrPrevious />

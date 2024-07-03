@@ -34,3 +34,8 @@ export interface IPaginate {
 export interface IMovies {
   movies: Movie[],
 }
+
+export interface IMovieCard {
+  movie: Movie, 
+  key: string
+}
