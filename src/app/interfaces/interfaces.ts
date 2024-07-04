@@ -62,3 +62,8 @@ export interface IStarComponent {
 export interface IRating {
   id: string
 }
+
+// redux
+export interface MoviesState {
+  movies: Movie[]
+}

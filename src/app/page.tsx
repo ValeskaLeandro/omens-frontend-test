@@ -1,3 +1,4 @@
+'use client'
 // Styles
 import styles from "./page.module.css";
 
@@ -5,11 +6,22 @@ import styles from "./page.module.css";
 import MainHero from "./components/MainHero/MainHero";
 import Pagination from "./components/Pagination/Pagination";
 
-// Data
-import { getMovies } from "./api/api";
+// Utils
+import { useEffect } from "react";
 
-export default async function Home() {
-  const movies = await getMovies()
+// Data with redux
+import { AppDispatch, RootState } from "@/redux/store";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchMovies } from "@/redux/slices/moviesSlice";
+
+export default function Home() {
+  const dispatch = useDispatch<AppDispatch>()
+  const { movies } = useSelector((state: RootState) => state.movies);
+
+  useEffect(() => {
+    dispatch(fetchMovies());
+  }, [dispatch])
+
   return (
     <main className={styles.main}>
       <MainHero />
