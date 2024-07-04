@@ -7,6 +7,7 @@
   gap: .5rem;
   padding-left: .5rem;
   font-size: 24px;
+  position: relative;
 }
 
 .inputText {
@@ -34,6 +35,28 @@
 
 .icon {
   color: var(--yellow);  
+}
+
+.suggestionsContainer {
+  position: absolute;
+  background-color: var(--white);
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  margin-top: 2px;
+}
+.suggestion {
+  list-style: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: .5rem;
+  color: var(--dark-gray);
+}
+
+.suggestionHighlighted {
+  background-color: var(--yellow);
+  border-radius: 10px;
 }
 
 @media (max-width: 500px) {
