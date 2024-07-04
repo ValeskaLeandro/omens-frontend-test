@@ -12,3 +12,13 @@ export const convertStringToList = (text: string) => {
 export const findMovieByName = ({movies, movieName}: IFindMovieByName) => {
   return movies.find(movie => movie.Title.toLowerCase().includes(movieName.toLowerCase()))
 }
+
+export const getFavorites = () => {
+  const favorites = JSON.parse(localStorage.getItem("favorites") || "[]")
+
+  if (favorites.length === 0) {
+    localStorage.removeItem("favorites")
+  }
+
+  return favorites;
+}

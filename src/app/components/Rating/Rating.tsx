@@ -1,6 +1,6 @@
 'use client'
 // Interfaces
-import { IRating } from "@/app/interfaces/interfaces";
+import { IId } from "@/app/interfaces/interfaces";
 
 // Utils
 import { useEffect, useState } from "react";
@@ -8,7 +8,7 @@ import StarComponent from "../StarComponent/StarComponent";
 
 const stars: number[] = [1, 2, 3, 4, 5];
 
-const Rating = ({ id }: IRating) => {
+const Rating = ({ id }: IId) => {
   const [activeStar, setActiveStar] = useState<number>();
   const nameItem = `movie-rating-${id}`
 

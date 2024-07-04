@@ -39,7 +39,7 @@ export interface IMovieCard {
   movie: Movie
 }
 
-export interface IMovieDetail {
+export interface IId {
   id: string
 }
 
@@ -57,10 +57,6 @@ export interface IFindMovieByName {
 export interface IStarComponent {
   isActive: boolean,
   onClick(): void
-}
-
-export interface IRating {
-  id: string
 }
 
 // redux

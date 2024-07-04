@@ -6,7 +6,7 @@ import styles from './MovieDetail.module.css'
 import MainButton from '../MainButton/MainButton';
 
 // Interfaces
-import { IMovieDetail, Movie } from '@/app/interfaces/interfaces';
+import { IId, Movie } from '@/app/interfaces/interfaces';
 // Utils
 import Image from 'next/image';
 import { convertStringToList } from '@/app/utils/utils';
@@ -19,7 +19,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch, RootState } from '@/redux/store';
 import { fetchMovies } from '@/redux/slices/moviesSlice';
 
-const MovieDetail = ({ id }: IMovieDetail) => {
+const MovieDetail = ({ id }: IId) => {
   const dispatch = useDispatch<AppDispatch>()
   const { movies } = useSelector((state: RootState) => state.movies);
 

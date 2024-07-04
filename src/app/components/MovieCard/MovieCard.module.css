@@ -54,5 +54,7 @@
 }
 
 .ration {
+  display: flex;
+  justify-content: space-between;
   padding: .5rem 1rem;
 }

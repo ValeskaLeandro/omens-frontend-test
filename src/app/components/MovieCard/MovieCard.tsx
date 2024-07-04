@@ -8,6 +8,7 @@ import Link from 'next/link';
 // Interfaces
 import { IMovieCard } from '@/app/interfaces/interfaces';
 import Rating from '../Rating/Rating';
+import Favorite from '../Favorite/Favorite';
 const MovieCard = ({movie}: IMovieCard) => {
   return(
     <div className={styles.containerCard}>
@@ -30,6 +31,7 @@ const MovieCard = ({movie}: IMovieCard) => {
       </Link>
         <div className={styles.ration}>
           <Rating id={movie.imdbID} />
+          <Favorite id={movie.imdbID} />
         </div>
     </div>
     
