@@ -20,6 +20,7 @@ const MovieCard = ({movie}: IMovieCard) => {
           height={445} 
           className={styles.imageCard}
           />
+          <div className={styles.degrade}></div>
           <span className={styles.rating}>{movie.imdbRating}</span>
         </div>
         <div className={styles.infos}>
