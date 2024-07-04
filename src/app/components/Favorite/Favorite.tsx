@@ -1,6 +1,6 @@
 'use client'
 //styles
-import { useCallback, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import styles from './Favorite.module.css'
 
 // Interfaces
@@ -11,6 +11,7 @@ import { getFavorites } from '@/app/utils/utils'
 const Favorite = ({ id }: IId) => {
   const [isFav, setIsFav] = useState<boolean>(false)
   const favorites = getFavorites()
+  
   const isFavorite = (id: string): boolean => {
     const favorites = getFavorites()
     return favorites.includes(id)
