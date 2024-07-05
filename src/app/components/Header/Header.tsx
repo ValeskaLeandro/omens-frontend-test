@@ -14,7 +14,7 @@ const Header = () => {
           <RiMovie2Fill size={30} />
           <span>Movies</span>
         </Link>
-        <MainButton href={"/favorites"} text='Favotires' />
+        <MainButton href={"/favorites"} text='Favorites' />
       </div>
     </header>
   )
