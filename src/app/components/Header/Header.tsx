@@ -4,6 +4,7 @@ import styles from './Header.module.css'
 // Utils
 import Link from 'next/link';
 import { RiMovie2Fill } from 'react-icons/ri';
+import MainButton from '../MainButton/MainButton';
 
 const Header = () => {
   return(
@@ -13,6 +14,7 @@ const Header = () => {
           <RiMovie2Fill size={30} />
           <span>Movies</span>
         </Link>
+        <MainButton href={"/favorites"} text='Favotires' />
       </div>
     </header>
   )

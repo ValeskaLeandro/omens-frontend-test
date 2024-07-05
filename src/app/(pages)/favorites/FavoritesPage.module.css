@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin: 7rem 0 5rem;
+}
+.container h1 {
+  color: var(--green);
+}
+.moviesGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.containerNotMovies {
+  margin-top: 10rem;
+  min-height: 40vh;
+  color: var(--green);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 680px) {
+  .moviesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .container h1  {
+    font-size: 24px;
+  }
+}
