@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Teste técnico front-end - Omens
 
-## Getting Started
+## 🧠 Sobre
+Este projeto é uma aplicação de front-end que interage com uma API para buscar e exibir uma lista de filmes. Na página inicial, os usuários podem visualizar uma seleção de filmes, realizar buscas por nome e ver detalhes específicos de cada filme ao clicar no pôster correspondente. Além disso, os usuários têm a opção de avaliar e favoritar seus filmes preferidos, proporcionando uma experiência personalizada e interativa.
 
-First, run the development server:
+### 💫 Você pode acessá-lo [aqui](https://omens-frontend-test.vercel.app/).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tecnologias
+Abaixo você pode conferir as ferramentas usadas no projeto.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [NextJS](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Redux](https://redux.js.org/usage/nextjs)
+- [CSS Modules](https://github.com/css-modules/css-modules)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Outras dependências:
+- [React-icons](https://react-icons.github.io/react-icons/)
+- [React-autosuggest](https://www.npmjs.com/package/react-autosuggest)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Funcionalidades exigidas:
+[✔] Fazer um "fetch" na API fornecida; <br>
+[✔] Desenvolver uma página que mostre os filmes retornados da API; <br>
+[✔] Desenvolver uma página com os detalhes dos filmes<br>
+[✔] Adicionar uma barra de busca que localiza os filmes pelo nome.<br>
 
-## Learn More
+### Funcionalidades sugeridas:
+[✔] Avaliar os filmes com estrelas;<br>
+[✔] Adicionar paginação na página inicial, exibindo 4 filmes por vez.<br>
 
-To learn more about Next.js, take a look at the following resources:
+### Funcionalidades extras:
+[✔] Favoritar seus filmes e visualizá-los em uma página de favoritos;<br>
+[✔] Adicionar sugestões dos nomes dos filmes ao usar a barra de pesquisa.<br>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#
+## 🏁 Dê o start 
+1. Clone o projeto <br>
+`git clone https://github.com/ValeskaLeandro/omens-frontend-test.git`
+2. Acesse a pasta do projeto <br> 
+`cd omens-frontend-test`
+3. Instale as dependências <br>
+`npm i` ou `npm install`
+4. Execute o projeto <br>
+`npm run dev`<br>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+O projeto será inicializado em: http://localhost:3000
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
